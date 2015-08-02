@@ -123,7 +123,7 @@ k.nearest.neighbor <- function(x,date,time=180, k=10,smoothed=T){
     new.series.1 <- new.series[1:time,]
   }
   
-  xx <- predict.close(old.series,new.series.1,"dtwDist",k)
+  xx <- predict.close(old.series,new.series.1,"MOist",k)
   
   old.series <- data$old.series
   new.series <- data$new.series
